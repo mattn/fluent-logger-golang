@@ -22,13 +22,13 @@ const (
 )
 
 type Config struct {
-	FluentPort  int
-	FluentHost  string
-	Timeout     time.Duration
-	BufferLimit int
-	RetryWait   int
-	MaxRetry    int
-	TagPrefix   string
+	FluentPort  int           `json:"fluent_port"`
+	FluentHost  string        `json:"fluent_host"`
+	Timeout     time.Duration `json:"timeout"`
+	BufferLimit int           `json:"buffer_limit"`
+	RetryWait   int           `json:"retry_wait"`
+	MaxRetry    int           `json:"max_retry"`
+	TagPrefix   string        `json:"tag_prefix"`
 }
 
 type Fluent struct {
